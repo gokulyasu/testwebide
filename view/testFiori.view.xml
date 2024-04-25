@@ -1,0 +1,361 @@
+<mvc:View controllerName="com.maventic.asset.Home.controller.Home" xmlns:l="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:f="sap.f" xmlns:core="sap.ui.core" xmlns:cssgrid="sap.ui.layout.cssgrid">
+	<!--<App>-->
+	<!--<pages>-->
+	<Page title="{i18n>title}" showHeader="false" class="sapUiSizeCompact">
+		<content>
+			<l:ResponsiveSplitter defaultPane="default" height="100%">
+				<l:PaneContainer >
+					<l:SplitPane width="37%" requiredParentWidth="200" id="default">
+						<Page title="QUICK LINKS">
+							<headerContent></headerContent>
+							<Label/>
+							<!--<f:GridList headerText="GridList 2">-->
+							<!--	<f:GridListItem>-->
+							<!--		<f:GridList  headerText="GridList 2" borderReached=".onBorderReached">-->
+							<!--			<f:customLayout>-->
+							<!--				<cssgrid:GridBasicLayout gridAutoRows="5rem" gridTemplateColumns="repeat(auto-fill, minmax(5rem, 1fr))" gridGap="0.5rem"></cssgrid:GridBasicLayout>-->
+							<!--			</f:customLayout>-->
+							<!--			<f:GridListItem>-->
+							<!--				<f:layoutData>-->
+							<!--					<cssgrid:GridItemLayoutData gridRow="span 1" gridColumn="span 3"/>-->
+							<!--				</f:layoutData>-->
+							<!--				<VBox class="sapUiSmallMargin">-->
+							<!--					<Title text="Title" wrapping="true"/>-->
+							<!--					<Label text="Subtitle" wrapping="true"/>-->
+							<!--				</VBox>-->
+							<!--			</f:GridListItem>-->
+							<!--			<f:GridListItem>-->
+							<!--				<f:layoutData>-->
+							<!--					<cssgrid:GridItemLayoutData gridRow="span 1" gridColumn="span 3"/>-->
+							<!--				</f:layoutData>-->
+							<!--				<VBox class="sapUiSmallMargin">-->
+							<!--					<Title text="Title" wrapping="true"/>-->
+							<!--					<Label text="Subtitle" wrapping="true"/>-->
+							<!--				</VBox>-->
+							<!--			</f:GridListItem>-->
+							<!--			<f:GridListItem>-->
+							<!--				<f:layoutData>-->
+							<!--					<cssgrid:GridItemLayoutData gridRow="span 1" gridColumn="span 3"/>-->
+							<!--				</f:layoutData>-->
+							<!--				<VBox class="sapUiSmallMargin">-->
+							<!--					<Title text="Title" wrapping="true"/>-->
+							<!--					<Label text="Subtitle" wrapping="true"/>-->
+							<!--				</VBox>-->
+							<!--			</f:GridListItem>-->
+							<!--		</f:GridList>-->
+							<!--	</f:GridListItem>-->
+							<!--	<f:GridListItem>-->
+							<!--		<f:GridList  headerText="GridList 2" borderReached=".onBorderReached">-->
+							<!--			<f:customLayout>-->
+							<!--				<cssgrid:GridBasicLayout gridAutoRows="5rem" gridTemplateColumns="repeat(auto-fill, minmax(5rem, 1fr))" gridGap="0.5rem"></cssgrid:GridBasicLayout>-->
+							<!--			</f:customLayout>-->
+							<!--			<f:GridListItem>-->
+							<!--				<f:layoutData>-->
+							<!--					<cssgrid:GridItemLayoutData gridRow="span 1" gridColumn="span 3"/>-->
+							<!--				</f:layoutData>-->
+							<!--				<VBox class="sapUiSmallMargin">-->
+							<!--					<Title text="Title" wrapping="true"/>-->
+							<!--					<Label text="Subtitle" wrapping="true"/>-->
+							<!--				</VBox>-->
+							<!--			</f:GridListItem>-->
+							<!--		</f:GridList>-->
+							<!--	</f:GridListItem>-->
+							<!--</f:GridList>-->
+							<!--<SplitContainer id="SplitContDemo" initialDetail="detail" initialMaster="master">-->
+							<!--	<detailPages>-->
+							<!--		<Page id="IdInwarding" title="Inwarding" backgroundDesign="Solid" showNavButton="{= !${device>/system/desktop} }"-->
+							<!--			navButtonPress=".onPressDetailBack">-->
+							<!--			<List itemPress=".onListItemPress">-->
+							<!--				<StandardListItem title="Inward of asset" type="Active" press="onInwardofAsset"/>-->
+							<!--				<StandardListItem title="Inward of accessory" type="Active" press="onInwardOfAccessorySem"/>-->
+							<!--				<StandardListItem title="Update accessory details" type="Active" press="onUpdateAccessorySem"/>-->
+							<!--				<StandardListItem title="Add software" type="Active"/>-->
+							<!--				<StandardListItem title="Update software" type="Active"/>-->
+							<!--				<StandardListItem title="Non PO Asset" type="Active"/>-->
+							<!--			</List>-->
+							<!--		</Page>-->
+							<!--		<Page id="IdInternalProcess" title="Internal Process" backgroundDesign="Solid" showNavButton="false" navButtonPress=".onPressDetailBack">-->
+							<!--			<List itemPress=".onListItemPress">-->
+							<!--				<StandardListItem title="Asset common dashboard" type="Active" press="onCommonDBSem"/>-->
+							<!--				<StandardListItem title="Allocation Non-Assets/Accesories" type="Active" press="onAllocNonAsseSem"/>-->
+							<!--				<StandardListItem title="Accesory De-Allocation" type="Active"/>-->
+							<!--				<StandardListItem title="Action Item" type="Active" press="onActionItem"/>-->
+							<!--			</List>-->
+							<!--		</Page>-->
+							<!--		<Page id="IdinterIntraTransfer" title="Inter/Intra Transfer" backgroundDesign="Solid" showNavButton="false">-->
+							<!--			<List itemPress=".onListItemPress">-->
+							<!--				<StandardListItem title="Accessory Transfer" type="Active"/>-->
+							<!--				<StandardListItem title="Receive Gatepass" type="Active" press="onSearchGatepassSem"/>-->
+							<!--				<StandardListItem title="Download/Print Gatepass" type="Active"/>-->
+							<!--			</List>-->
+							<!--		</Page>-->
+							<!--		<Page id="IdPhysicalInventory" title="Physical Inventory" backgroundDesign="Solid" showNavButton="false" navButtonPress=".onPressDetailBack">-->
+							<!--			<List itemPress=".onListItemPress">-->
+							<!--				<StandardListItem title="Create PI Assets" type="Active"/>-->
+							<!--				<StandardListItem title="Display/Edit Physical Inventory" type="Active"/>-->
+							<!--				<StandardListItem title="Physical Inventory Report" type="Active"/>-->
+							<!--				<StandardListItem title="Physical Verification" type="Active"/>-->
+							<!--			</List>-->
+							<!--		</Page>-->
+							<!--		<Page id="IdReport" showHeader="true" title="Report" backgroundDesign="Solid" showNavButton="false" navButtonPress=".onPressDetailBack">-->
+							<!--			<SplitContainer id="SplitContDemoReport" initialDetail="detail" initialMaster="master">-->
+							<!--				<masterPages>-->
+							<!--					<Page id="idMasterReportR" showHeader="false" title="Reports" backgroundDesign="List" showNavButton="false"-->
+							<!--						navButtonPress=".onPressMasterBack">-->
+							<!--						<List itemPress=".onListItemPress">-->
+							<!--							<StandardListItem title="Asset Report" type="Navigation" press="onAssetReport"/>-->
+							<!--							<StandardListItem title="Accessory Report" type="Navigation" press="onAccessoryReport"/>-->
+							<!--							<StandardListItem title="Software Report" type="Navigation" press="onSoftwareReport"/>-->
+							<!--							<StandardListItem title="Mass Tag Printing" type="Navigation" press="onMassTagPrinting"/>-->
+							<!--						</List>-->
+							<!--					</Page>-->
+							<!--					<Page id="IdAssetDetailReport" title="Asset Report" backgroundDesign="Solid" showNavButton="true" navButtonPress="onPressMasterBack">-->
+							<!--						<List >-->
+							<!--							<StandardListItem title="Asset Master Report" type="Active" press="onAssetMstrSem"/>-->
+							<!--							<StandardListItem title="Asset Transfer Report" type="Active" press="onAssetTrSem"/>-->
+							<!--							<StandardListItem title="Asset Allocation Report" type="Active"/>-->
+							<!--							<StandardListItem title="Asset AMC Report" type="Active"/>-->
+							<!--						</List>-->
+							<!--					</Page>-->
+							<!--					<Page id="IdAccDetailReport" title="Accessory Report" backgroundDesign="Solid" showNavButton="true" navButtonPress="onPressMasterBack">-->
+							<!--						<List itemPress=".onListItemPress">-->
+							<!--							<StandardListItem title="Accessory Master Reprot" type="Active"/>-->
+							<!--							<StandardListItem title="Accessory Transfer Report" type="Active"/>-->
+							<!--							<StandardListItem title="Accessory Alloc Report" type="Active"/>-->
+							<!--							<StandardListItem title="Accessory Amc Report" type="Active"/>-->
+							<!--						</List>-->
+							<!--					</Page>-->
+							<!--					<Page id="IdSoftwareReport" title="Software Report" backgroundDesign="Solid" showNavButton="true" navButtonPress="onPressMasterBack">-->
+							<!--						<List itemPress=".onListItemPress">-->
+							<!--							<StandardListItem title="Software Master Report" type="Active"/>-->
+							<!--							<StandardListItem title="Software Alloction Report" type="Active"/>-->
+							<!--							<StandardListItem title="Software AMC report" type="Active"/>-->
+							<!--						</List>-->
+							<!--					</Page>-->
+							<!--					<Page id="IdMassTagPrinting" title="Mass Tag Printing" backgroundDesign="Solid" showNavButton="true" navButtonPress="onPressMasterBack">-->
+							<!--						<List itemPress=".onListItemPress">-->
+							<!--							<StandardListItem title="Asset Mass Tag Printing" type="Active"/>-->
+							<!--							<StandardListItem title="Accessory Mass Tag Printing" type="Active"/>-->
+							<!--						</List>-->
+							<!--					</Page>-->
+							<!--				</masterPages>-->
+							<!--			</SplitContainer>-->
+							<!--		</Page>-->
+							<!--	</detailPages>-->
+							<!--	<masterPages>-->
+							<!--		<Page showHeader="false" backgroundDesign="List" showNavButton="false" navButtonPress=".onPressMasterBack">-->
+							<!--			<List itemPress=".onListItemPress">-->
+							<!--				<StandardListItem title="Inwarding" type="Navigation" press="onInwarding"/>-->
+							<!--				<StandardListItem title="Internal Process" type="Navigation" press="onIProcess"/>-->
+							<!--				<StandardListItem title="Inter/Intra Transfer" type="Navigation" press="onInTransfer"/>-->
+							<!--				<StandardListItem title="Physical Inventory" type="Navigation" press="onPhysicalInventory"/>-->
+							<!--				<StandardListItem title="Report" type="Navigation" press="onReport"/>-->
+							<!--			</List>-->
+							<!--		</Page>-->
+							<!--	</masterPages>-->
+							<!--</SplitContainer>-->
+							<ScrollContainer horizontal="false">
+								<VBox>
+									<ScrollContainer vertical="false">
+										<HBox >
+											<l:VerticalLayout width="100%" class="gridWrapper">
+												<l:Grid containerQuery="true">
+													<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop sapUiTinyMarginBottom tileLayout " headerImage="sap-icon://sales-order-item" mode="ContentMode" header="Inwarding"
+														press="press" visible="{mMainModel>/VisibleTiles/GrpIn}" >
+														<TileContent >
+															<VBox height="100%">
+																<!--<Link emphasized="true" class="GenericTileCustom"  text="Link 1" class="" emphasized="true" press="onPressed"/>-->
+																<!--<GenericTile mode="LineMode" class="GenericTileCustom" header="Update software" press="press"-->
+																<!--	visible="{mMainModel>/VisibleTiles/InUpdtSoftware}"/>-->
+																<Link emphasized="true" class="GenericTileCustom"  text="Inward of asset"  press="onInwardofAsset" visible="{mMainModel>/VisibleTiles/InAst}"/>
+																<Link emphasized="true" class="GenericTileCustom"  text="Inward of accessory" press="onInwardOfAccessorySem" visible="{mMainModel>/VisibleTiles/InAsc}"/>
+																<Link emphasized="true" class="GenericTileCustom"  text="Update accessory details" press="onUpdateAccessorySem" visible="{mMainModel>/VisibleTiles/InUpdateAsc}"/>
+																<Link emphasized="true" class="GenericTileCustom"  text="Add software" press="press" visible="{mMainModel>/VisibleTiles/InAddSoft}"/>
+																<Link emphasized="true" class="GenericTileCustom"  text="Update software" press="press" visible="{mMainModel>/VisibleTiles/InUpdtSoftware}"/>
+																<Link emphasized="true" class="GenericTileCustom"  text="Inward IO/Non PO" press="onNonPOAsset" visible="{mMainModel>/VisibleTiles/OptChar1}"/>
+															</VBox>
+														</TileContent>
+													</GenericTile>
+													<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop sapUiTinyMarginBottom tileLayout" headerImage="sap-icon://learning-assistant" header="Internal Process" press="press"
+														visible="{mMainModel>/VisibleTiles/GrpInt}">
+														<TileContent>
+															<VBox width="100%">
+																<Link emphasized="true" class="GenericTileCustom"  text="Common dashboard" press="onCommonDBSem" width="100%"
+																	visible="{mMainModel>/VisibleTiles/IntAstCommDashboard}"/>
+																<Link emphasized="true" class="GenericTileCustom"  text="Allocation Non-Assets/Accesories" width="100%" press="onAllocNonAsseSem"
+																	visible="{mMainModel>/VisibleTiles/IntAlloNonAstAsc}"/>
+																<Link emphasized="true" class="GenericTileCustom"  text="Accesory De-Allocation" press="press"
+																	visible="{mMainModel>/VisibleTiles/IntAscDeallocation}"/>
+																<Link emphasized="true" class="GenericTileCustom"  text="Action Item" press="onActionItem"
+																	visible="{mMainModel>/VisibleTiles/TransActionItem}"/>
+															</VBox>
+														</TileContent>
+													</GenericTile>
+													<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop sapUiTinyMarginBottom tileLayout" headerImage="sap-icon://org-chart" header="Inter/Intra Transfer" press="press"
+														visible="{mMainModel>/VisibleTiles/GrpTrans}">
+														<TileContent>
+															<VBox>
+																<Link emphasized="true" class="GenericTileCustom"  text="Accessory Transfer" press="press"
+																	visible="{mMainModel>/VisibleTiles/TransAscTransfer}"/>
+																<Link emphasized="true" class="GenericTileCustom"  text="Receive Gatepass" press="onSearchGatepassSem"
+																	visible="{mMainModel>/VisibleTiles/TransReceive}"/>
+																<Link emphasized="true" class="GenericTileCustom"  text="Download/Print Gatepass" press="press"
+																	visible="{mMainModel>/VisibleTiles/TransPrintGatepass}"/>
+															</VBox>
+														</TileContent>
+													</GenericTile>
+													<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop sapUiTinyMarginBottom tileLayout" headerImage="sap-icon://add-coursebook" header="Physical Inventory" press="press"
+														visible="{mMainModel>/VisibleTiles/GrpPi}">
+														<TileContent>
+															<VBox>
+																<Link emphasized="true" class="GenericTileCustom"  text="Create PI Assets" press="onCreatePIAssets"
+																	visible="{mMainModel>/VisibleTiles/PiCreat}"/>
+																<Link emphasized="true" class="GenericTileCustom"  text="Display/Edit Physical Inventory" press="onDisplayEditPI"
+																	visible="{mMainModel>/VisibleTiles/PiDisplayEdit}"/>
+																<Link emphasized="true" class="GenericTileCustom"  text="Physical Inventory Report" press="onPhysicalInventoryReport"
+																	visible="{mMainModel>/VisibleTiles/PiReport}"/>
+																<Link emphasized="true" class="GenericTileCustom"  text="Physical Verification" press="onPhysicalVerification"
+																	visible="{mMainModel>/VisibleTiles/OptChar4}"/>
+															</VBox>
+														</TileContent>
+													</GenericTile>
+													<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop sapUiTinyMarginBottom tileLayout" headerImage="sap-icon://create-form" header="Reports" press="press"
+														visible="{mMainModel>/VisibleTiles/GrpRep}">
+														<TileContent>
+															<VBox>
+																<Link emphasized="true" class="GenericTileCustom"  text="Asset Report" press="onAssetReport"
+																	visible="{mMainModel>/VisibleTiles/RepTransfer}"/>
+																<Link emphasized="true" class="GenericTileCustom"  text="Accessory Report" press="onAccessoryReport"
+																	visible="{mMainModel>/VisibleTiles/RepInwarding}"/>
+																<Link emphasized="true" class="GenericTileCustom"  text="Software Report" press="onSoftwareReport"
+																	visible="{mMainModel>/VisibleTiles/RepInternalProcess}"/>
+																<Link emphasized="true" class="GenericTileCustom"  text="Mass Tag Printing" press="onMassTagPrinting"
+																	visible="{mMainModel>/VisibleTiles/OptChar3}"/>
+																	<Link emphasized="true" class="GenericTileCustom"  text="Asset Graphical Report" press="onAssetGraphicalReport"
+																	visible="{mMainModel>/VisibleTiles/OptChar2}"/>
+															</VBox>
+														</TileContent>
+													</GenericTile>
+												</l:Grid>
+											</l:VerticalLayout>
+										</HBox>
+									</ScrollContainer>
+								</VBox>
+							</ScrollContainer>
+							<!--<HBox>-->
+							<!--	<VBox>-->
+							<!--		<Text text="Component Routing"></Text>-->
+							<!--		<Button press="navAction" text="Action Item"/>-->
+							<!--		<Button press="navCommonDashboard" text="Common DB"/>-->
+							<!--		<Button press="navPi" text="PI"/>-->
+							<!--		<Button press="navInward" text="Inward Component routing"/>-->
+							<!--	</VBox>-->
+							<!--	<VBox>-->
+							<!--		<Text text="Cross app navigation"></Text>-->
+							<!--		<Button press="navTransSearch" text="Inward Cross app navigation using sem obj"/>-->
+							<!--		<Button press="navActionItemSemobj" text="Action item Cross app navigation using sem obj"/>-->
+							<!--		<Button press="navHomeSemobj" text="Home Cross app navigation using sem obj"/>-->
+							<!--	</VBox>-->
+							<!--</HBox>-->
+						</Page>
+					</l:SplitPane>
+					<l:PaneContainer orientation="Vertical" resize=".onInnerContainerResize">
+						<l:SplitPane requiredParentWidth="1100">
+							<l:layoutData>
+								<l:SplitterLayoutData size="{sizes>/pane2}"/>
+							</l:layoutData>
+							<Page title="ACTION ITEMS">
+								<headerContent>
+									<OverflowToolbar id="actionItemTableOverflowTool" visible="true">
+										<ToolbarSpacer></ToolbarSpacer>
+										<Button tooltip="Export" icon="sap-icon://excel-attachment" press="onExport1" visible="true"/>
+										<Button tooltip="sort" icon="sap-icon://sort" press="onSort1" visible="true"/>
+										<Input visible="true" liveChange="onSearchTable1" id="hideableInput" width="60%"/>
+									</OverflowToolbar>
+								</headerContent>
+								<Text text="LayoutData.size={sizes>/pane3}"/>
+								<Table width="100%" id="ActionItemTabId" autoPopinMode="true" items="{ path:'mMainModel>/table1'}"
+									sticky="HeaderToolbar,InfoToolbar,ColumnHeaders" growing="true" growingScrollToLoad="true" growingThreshold="10">
+									<columns >
+										<Column width="6rem" hAlign="Center">
+											<Label text="Action" design="Bold"/>
+										</Column>
+										<Column width="6rem" hAlign="Center">
+											<Label text="Request No" design="Bold"/>
+										</Column>
+										<Column width="10rem" hAlign="Center">
+											<Label text="Asset"  design="Bold" wrapping= "false"/>
+										</Column>
+										<Column width="4rem" hAlign="Center">
+											<Label text="Status" design="Bold"/>
+										</Column>
+										<Column width="6rem" hAlign="Center">
+											<Label text="Request Date" design="Bold" wrapping="true"/>
+										</Column>
+										<!--<Column width="6rem" hAlign="Center" >-->
+										<!--	<Label text="Pending with" design="Bold" wrapping="true"/>-->
+										<!--</Column>-->
+									</columns>
+									<items>
+										<ColumnListItem type="Navigation" press="onPressActionItem">
+											<cells>
+												<Text text="{mMainModel>RequestTypeDesc}"></Text>
+												<Text text="{mMainModel>RequestNo}"/>
+												<Text text="{mMainModel>AssetName}" wrapping="false"/>
+												<Text text="{mMainModel>StatusText}"></Text>
+												<Text text="{path :'mMainModel>RequestDate', formatter:'com.maventic.asset.Home.utility.Formatter.ConvDateforComments'}"/>
+												<!--<Text text="{mMainModel>CrName}"></Text>-->
+											</cells>
+										</ColumnListItem>
+									</items>
+								</Table>
+							</Page>
+						</l:SplitPane>
+						<l:SplitPane requiredParentWidth="1000">
+							<l:layoutData>
+								<l:SplitterLayoutData size="{sizes>/pane3}"/>
+							</l:layoutData>
+							<Page title="SAP NOTIFICATION">
+								<headerContent>
+									<OverflowToolbar id="actionItemTableOverflowTool2" visible="true">
+										<ToolbarSpacer></ToolbarSpacer>
+										<Button tooltip="Export" icon="sap-icon://excel-attachment" press="onExport2" visible="true"/>
+										<Button tooltip="sort" icon="sap-icon://sort" press="onSort2" visible="true"/>
+										<Input visible="true" liveChange="onSearchTable2" width="60%"/>
+									</OverflowToolbar>
+								</headerContent>
+								<Text text="LayoutData.size={sizes>/pane3}"/>
+								<Table width="100%" items="{ path:'mMainModel>/table2'}" id="NotificationTabId" autoPopinMode="true"
+									sticky="HeaderToolbar,InfoToolbar,ColumnHeaders" growing="true" growingScrollToLoad="true" growingThreshold="10">
+									<columns >
+										<Column width="6rem">
+											<Label text="Request No" design="Bold"/>
+										</Column>
+										<Column width="6rem">
+											<Label text="Asset/Accessory" design="Bold"/>
+										</Column>
+										<Column width="6rem">
+											<Label text="Notification" design="Bold"/>
+										</Column>
+									</columns>
+									<items>
+										<ColumnListItem >
+											<cells>
+												<Text text="{mMainModel>RequestNo}"/>
+												<Text text="{mMainModel>AssetName}"/>
+												<Text text="{mMainModel>Notification}"></Text>
+											</cells>
+										</ColumnListItem>
+									</items>
+								</Table>
+							</Page>
+						</l:SplitPane>
+					</l:PaneContainer>
+				</l:PaneContainer>
+			</l:ResponsiveSplitter>
+		</content>
+	</Page>
+	<!--</pages>-->
+	<!--</App>-->
+</mvc:View>

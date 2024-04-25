@@ -1,0 +1,36 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Dialog  title="{mMainModel>/VisibleFlag/title}">
+		<customHeader >
+			<Bar>
+				<contentMiddle >
+					<core:Icon src="{mMainModel>/VisibleFlag/icon}"  width="9%" />
+					<Title text="{mMainModel>/VisibleFlag/title}" class="bold"/>
+				</contentMiddle>
+				<contentRight>
+					<core:Icon src="sap-icon://decline"  press="onCloseReportPopup"/>
+				</contentRight>
+			</Bar>
+		</customHeader>
+		<List>
+			<ActionListItem text="Asset Master Report" visible="{mMainModel>/VisibleFlag/Asset}" press="onAssetMasterReport"/>
+			<ActionListItem text="Asset Transfer Report" visible="{mMainModel>/VisibleFlag/Asset}" press="onAssetTransferReport"/>
+			<ActionListItem text="Asset Allocation Report" visible="{mMainModel>/VisibleFlag/Asset}" press="onAssetAllocationReport" />
+			<ActionListItem text="Asset AMC Report" visible="{mMainModel>/VisibleFlag/Asset}" press="onAssetAMCReport" />
+			
+			<ActionListItem text="Accessory Master Reprot" visible="{mMainModel>/VisibleFlag/Accessory}" press="onAccessoryMasterReprot"/>
+			<ActionListItem text="Accessory Transfer Report" visible="{mMainModel>/VisibleFlag/Accessory}" press="onAccessoryTransferReport"/>
+			<ActionListItem text="Accessory Alloc Report" visible="{mMainModel>/VisibleFlag/Accessory}" press="onAccessoryAllocReport"/>
+			<ActionListItem text="Accessory Amc Report" visible="{mMainModel>/VisibleFlag/Accessory}" press="onAccessoryAmcReport"/>
+			
+			
+			<ActionListItem text="Software Master Report" visible="{mMainModel>/VisibleFlag/Software}" press="onSoftwareMasterReport"/>
+			<ActionListItem text="Software Alloction Report" visible="{mMainModel>/VisibleFlag/Software}" press="onSoftwareAlloctionReport"/>
+			<ActionListItem text="Software AMC report" visible="{mMainModel>/VisibleFlag/Software}" press="onSoftwareAMCreport"/>
+			
+			<ActionListItem text="Asset Mass Tag Printing" visible="{mMainModel>/VisibleFlag/TagPrint}" press="onAssetBarcodePrint"/>
+			<ActionListItem text="Accessory Mass Tag Printing" visible="{mMainModel>/VisibleFlag/TagPrint}" press="onAccessoryBarcodePrint"/>
+			
+		</List>
+		
+	</Dialog>
+</core:FragmentDefinition>

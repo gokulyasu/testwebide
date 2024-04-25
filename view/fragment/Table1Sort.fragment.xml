@@ -1,0 +1,12 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <ViewSettingsDialog confirm=".onSortDialogConfirm1" id="table1">
+        <sortItems>
+        	<ViewSettingsItem text="Action" key="RequestTypeDesc" />
+            <ViewSettingsItem text="Request Number" key="RequestNo" />
+            <ViewSettingsItem text="Asset" key="AssetName" />
+            <ViewSettingsItem text="Status" key="StatusText" />
+            <ViewSettingsItem text="Request Date" key="RequestDateSort" />
+            <ViewSettingsItem text="Pending With" key="CrName" />
+            </sortItems>
+    </ViewSettingsDialog>
+</core:FragmentDefinition>

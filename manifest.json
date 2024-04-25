@@ -1,0 +1,126 @@
+{
+    "_version": "1.7.0",
+    "sap.app": {
+        "id": "com.maventic.asset.Home",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "sourceTemplate": {
+            "id": "ui5template.basicSAPUI5ApplicationProject",
+            "version": "1.40.12"
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        },
+        "supportedThemes": [
+            "sap_hcb",
+            "sap_belize"
+        ]
+    },
+    "sap.ui5": {
+        "config": {
+            "fullWidth": true
+        },
+        "rootView": {
+            "viewName": "com.maventic.asset.Home.view.App",
+            "type": "XML"
+        },
+        "dependencies": {
+            "minUI5Version": "1.30.0",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {},
+                "sap.ui.layout": {},
+                "sap.ushell": {},
+                "sap.collaboration": {},
+                "sap.ui.comp": {},
+                "sap.uxap": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "com.maventic.asset.Home.i18n.i18n"
+                }
+            }
+        },
+        "componentUsages": {
+            "mvn_asset_in_asset": {
+                "name": "com.maventic.asset.InwardOfAsset",
+                "lazy": false
+            }
+        },
+        "resourceRoots": {
+            "com.maventic.asset.InwardOfAsset": "../asset_in_asset"
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "viewPath": "com.maventic.asset.Home.view",
+                "controlId": "App",
+                "controlAggregation": "pages",
+                "transition": "slide",
+                "async": true,
+                "clearControlAggregation": false
+            },
+            "routes": [
+                {
+                    "name": "nTest",
+                    "pattern": "",
+                    "target": "mvn_asset_home"
+                },
+                {
+                    "name": "mvn_asset_inwarding_inwardAsset_detail",
+                    "pattern": "mvn/asset/inwarding/inwardofasset",
+                    "target": "mvn_asset_inwarding_inwardAsset_detail"
+                }
+            ],
+            "targets": {
+                "mvn_asset_home": {
+                    "viewType": "XML",
+                    "viewName": "testFiori",
+                    "transition": "slide",
+                    "clearControlAggregation": false
+                },
+                "mvn_asset_inwarding_inwardAsset_detail": {
+                    "type": "Component",
+                    "usage": "mvn_asset_in_asset"
+                }
+            }
+        },
+        "resources": {
+            "css": [
+                {
+                    "uri": "css/style.css"
+                }
+            ]
+        }
+    },
+    "sap.platform.abap": {
+        "uri": "/sap/bc/ui5_ui5/mvn/asset_home",
+        "_version": "1.1.0"
+    }
+}

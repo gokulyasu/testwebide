@@ -1,0 +1,67 @@
+{
+    "resources": [
+        {
+            "name": "i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "manifest.json"
+        },
+        {
+            "name": "view/fragment/Table1Sort.fragment.xml"
+        },
+        {
+            "name": "view/fragment/ReportPopup.fragment.xml"
+        },
+        {
+            "name": "view/fragment/Table2Sort.fragment.xml"
+        },
+        {
+            "name": "view/App.view.xml"
+        },
+        {
+            "name": "view/testFiori.view.xml"
+        },
+        {
+            "name": "resources.json",
+            "merged": true
+        },
+        {
+            "name": "index.html"
+        },
+        {
+            "name": "neo-app.json"
+        },
+        {
+            "name": "utility/Common.js"
+        },
+        {
+            "name": "utility/Formatter.js"
+        },
+        {
+            "name": "model/models.js"
+        },
+        {
+            "name": "css/style.css"
+        },
+        {
+            "name": ".project.json"
+        },
+        {
+            "name": ".user.project.json"
+        },
+        {
+            "name": "Component.js"
+        },
+        {
+            "name": "controller/testFiori.controller.js"
+        },
+        {
+            "name": "controller/Home.controller.js"
+        }
+    ]
+}

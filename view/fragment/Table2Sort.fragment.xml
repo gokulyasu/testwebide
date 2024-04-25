@@ -1,0 +1,9 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <ViewSettingsDialog confirm=".onSortDialogConfirm2" id="table2">
+        <sortItems>
+            <ViewSettingsItem text="Request Number" key="RequestNo" />
+            <ViewSettingsItem text="Asset" key="AssetName" />
+            <ViewSettingsItem text="Notification" key="Notification" />
+            </sortItems>
+    </ViewSettingsDialog>
+</core:FragmentDefinition>

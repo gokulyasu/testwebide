@@ -18,5 +18,12 @@
     "buildRequired": true,
     "targetFolder": "dist",
     "lastBuildDateTime": "Tue, 02 Jan 2024 06:23:48 GMT"
+  },
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "",
+    "defaultLanguage": "",
+    "defaultI18NPropertyFile": "",
+    "resourceModelName": ""
   }
 }
